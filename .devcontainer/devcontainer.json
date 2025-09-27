@@ -3,16 +3,9 @@
 {
 	"name": "Node.js & TypeScript",
 	// Or use a Dockerfile or Docker Compose file. More info: https://containers.dev/guide/dockerfile
-	"image": "mcr.microsoft.com/devcontainers/typescript-node:1-20-bullseye",
+	"image": "mcr.microsoft.com/devcontainers/typescript-node:1-22-bookworm",
 	"features": {
-		"ghcr.io/lumenpink/devcontainer-features/bun:0": {}
-	},
-	"customizations": {
-		"vscode": {
-			"extensions": [
-				"astro-build.astro-vscode"
-			]
-		}
+		"ghcr.io/devcontainers-extra/features/bun:1": {}
 	}
 
 	// Features to add to the dev container. More info: https://containers.dev/features.

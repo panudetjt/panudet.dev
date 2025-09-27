@@ -1,24 +1,25 @@
 {
-  "name": "panudet-dev",
-  "type": "module",
-  "version": "0.0.1",
-  "scripts": {
-    "dev": "astro dev",
-    "start": "astro dev",
-    "build": "astro check && astro build",
-    "preview": "astro preview",
-    "astro": "astro",
-    "pages:dev": "wrangler pages dev --compatibility-date=2024-02-08 -- astro dev",
-    "pages:deploy": "astro build && wrangler pages deploy ./dist"
-  },
-  "dependencies": {
-    "@astrojs/check": "^0.5.4",
-    "@astrojs/cloudflare": "^9.0.1",
-    "astro": "^4.4.0",
-    "typescript": "^5.3.3"
-  },
-  "devDependencies": {
-    "@cloudflare/workers-types": "^4.20240208.0",
-    "wrangler": "^3.28.3"
-  }
+	"name": "panudet-dev",
+	"type": "module",
+	"version": "0.0.1",
+	"scripts": {
+		"dev": "astro dev",
+		"build": "astro build",
+		"preview": "astro build && wrangler dev",
+		"astro": "astro",
+		"deploy": "astro build && wrangler deploy",
+		"cf-typegen": "wrangler types"
+	},
+	"dependencies": {
+		"@astrojs/cloudflare": "^12.6.9",
+		"@astrojs/mdx": "^4.3.6",
+		"@astrojs/rss": "^4.0.12",
+		"@astrojs/sitemap": "^3.6.0",
+		"astro": "^5.14.1",
+		"sharp": "^0.34.3"
+	},
+	"devDependencies": {
+		"@types/node": "^24.5.2",
+		"wrangler": "^4.40.2"
+	}
 }
