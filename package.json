@@ -11,15 +11,15 @@
 		"cf-typegen": "wrangler types"
 	},
 	"dependencies": {
-		"@astrojs/cloudflare": "^12.6.9",
-		"@astrojs/mdx": "^4.3.6",
-		"@astrojs/rss": "^4.0.12",
-		"@astrojs/sitemap": "^3.6.0",
-		"astro": "^5.14.1",
-		"sharp": "^0.34.3"
+		"@astrojs/cloudflare": "^13.6.0",
+		"@astrojs/mdx": "^6.0.1",
+		"@astrojs/rss": "^4.0.18",
+		"@astrojs/sitemap": "^3.7.3",
+		"astro": "^6.4.2",
+		"sharp": "^0.34.5"
 	},
 	"devDependencies": {
-		"@types/node": "^24.5.2",
-		"wrangler": "^4.40.2"
+		"@types/node": "^25.9.1",
+		"wrangler": "^4.95.0"
 	}
 }
